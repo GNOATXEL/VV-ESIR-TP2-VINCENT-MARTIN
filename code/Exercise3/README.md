@@ -2,7 +2,8 @@
 
 Voilà le .xml obtenu en exportant :
 
-```<rule name="ifpuissance3"
+```
+<rule name="ifpuissance3"
       language="java"
       message="euh ya plus de 3 ifs imbriqués bozo c pas bien :nerd:"
       class="net.sourceforge.pmd.lang.rule.XPathRule">
@@ -21,4 +22,5 @@ Voilà le .xml obtenu en exportant :
       </value>
     </property>
   </properties>
-</rule>```
+</rule>
+```
