@@ -5,10 +5,10 @@ Voilà le .xml obtenu en exportant :
 ```
 <rule name="ifpuissance3"
       language="java"
-      message="euh ya plus de 3 ifs imbriqués bozo c pas bien :nerd:"
+      message="there's three nested if"
       class="net.sourceforge.pmd.lang.rule.XPathRule">
   <description>
-    Euh bah quand y&apos;a 3 ifs emboîtés ça couine
+    promote nested if to avoid them
   </description>
   <priority>1</priority>
   <properties>
