@@ -35,6 +35,8 @@ On observe que dans notre fichier Public ElementsPrinter.java on à ajouté:
         }
     }
 ```
+Pour lancer le programme il est important d'indiquer en paramètre de la fonction main, le chemin vers la classe à analyser.
+
 L'idée derrière ces deux fonctions est de remplir deux listes : une liste public_method qui va contenir l'ensemble des méthodes publiques, ainsi qu'une liste private_attributs qui va accueillir l'ensemble des attributs privés (remplis lors de l'appel de Visit plus haut). Une fois que l'on a parcouru l'ensemble du fichier, nous comparons les noms des attributs et des méthodes. Si le nom de notre méthode est de type "is" ou "get" suivi d'un nom d'attribut, alors l'attribut a un getter. Si ce n'est pas le cas, nous l'ajoutons à la liste des attributs sans getter.
 
 Critique : Cette méthode présente de nombreux problèmes et repose sur les bonnes pratiques de programmation. En effet, elle utilise les noms pour détecter les getters. Dans le cas où le getter ne possède pas un nom approprié, ou qu'une fonction ne remplit pas la fonction de getter mais possède un nom de getter, la méthode ne serait pas pertinente.
